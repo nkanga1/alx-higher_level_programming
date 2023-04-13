@@ -3,13 +3,12 @@
 
 
 def write_file(filename="", text=""):
-    """write a string to a UTF8 text file.
-
+    """Write a string to a UTF8 text file.
     Args:
-        filename (str): the name of the felr to write.
-        text (str): the text to write to the file.
+        filename (str): The name of the file to write.
+        text (str): The text to write to the file.
     Returns:
-        the number of characters written.
+        The number of characters written.
     """
-    with open(filename,"w", encoding="utf-8") as f:
+    with open(filename, "w", encoding="utf-8") as f:
         return f.write(text)
